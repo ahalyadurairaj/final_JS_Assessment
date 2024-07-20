@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h2>DCKAP Palli Inventory Dashboard</h2>
+    </header>
+
+    <h2 class="dashboard">DASHBOARD</h2>
+    <div class="section">
+        <h3>Highest Quantity Products</h3>
+        <div id="highestProducts">
+            
+        </div>
+    </div>
+    <div class="section" id="formContainer">
+        <button id="addProductBtn" >Add Product</button>
+        <button id="updateInventoryBtn">Update Inventory</button>
+    </div>
+
+    <div id="formContent" class="hidden form-container">
+        <!-- Form content will be inserted here -->
+    </div>
+    <div class="section">
+        <h3 class="status">Inventory Status</h3>
+        <div id="myDiv"></div>
+    </div>
+
+    <div class="section">
+        <h3>Recipient Details</h3>
+        <table id="recipientTable">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Receipt</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Records will be added here -->
+            </tbody>
+        </table>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
